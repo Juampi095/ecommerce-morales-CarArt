@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBarBoostrap from './components/NavBar';
+import NavBar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-<NavBarBoostrap />
+      
+        {/* Acá va mi ItemListContainer.js */}
+      <ItemListContainer greeting="Saludos a todos!"/>
       </header>
     </div>
   );
