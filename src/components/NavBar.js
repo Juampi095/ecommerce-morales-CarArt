@@ -1,4 +1,6 @@
 import CartWidget from "./CartWidget" //Carrito
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 // function NavBar(){
 //     return(
@@ -9,45 +11,35 @@ import CartWidget from "./CartWidget" //Carrito
 // export default NavBar;
 
 //IMPORT NavBar
-import React, { Component } from 'react';
-import { Navbar, Nav, Button, Dropdown, Form, Collapse } from 'bootstrap-4-react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-export default class App extends Component {
-  render() {
-    return (
-      <Navbar expand="lg" light bg="light">
-        <Navbar.Brand href="#">
-          Navbar
-        </Navbar.Brand>
-        <Navbar.Toggler target="#navbarSupportedContent" />
-        <Collapse navbar id="navbarSupportedContent">
-          <Navbar.Nav mr="auto">
-            <Nav.Item active>
-              <Nav.Link href="#">Home</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#">Link</Nav.Link>
-            </Nav.Item>
-            <Nav.Item dropdown>
-              <Nav.Link dropdownToggle>Dropdown</Nav.Link>
-              <Dropdown.Menu>
-                <Dropdown.Item>Action</Dropdown.Item>
-                <Dropdown.Item>Another action</Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item>Something else</Dropdown.Item>
-              </Dropdown.Menu>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link disabled>Disabled</Nav.Link>
-            </Nav.Item>
-          </Navbar.Nav>
-          <Form inline my="2 lg-0">
-            <Form.Input type="search" placeholder="Search" mr="sm-2" />
-            <Button outline success my="2 sm-0">Search</Button>
-          </Form>
+function NavBar() {
+  return (
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="#home">CarArt</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Inicio</Nav.Link>
+            <Nav.Link href="#link">Nosotros</Nav.Link>
+            <NavDropdown title="Modelos" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Mas Buscados</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Mas vendidos
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Ofertas</NavDropdown.Item>
+              <NavDropdown.Divider />
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
         <CartWidget/>
-        </Collapse>
-      </Navbar>
-    )
-  }
+      </Container>
+    </Navbar>
+  );
 }
+
+export default NavBar;

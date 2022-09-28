@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      
+      <NavBar/>
         {/* Acá va mi ItemListContainer.js */}
       <ItemListContainer greeting="Saludos a todos!"/>
       </header>
@@ -14,4 +16,5 @@ function App() {
   );
 }
 
-export default App;
+export default NavBar;
+
