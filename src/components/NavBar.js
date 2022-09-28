@@ -2,6 +2,7 @@ import CartWidget from "./CartWidget" //Carrito
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 // function NavBar(){
 //     return(
 //         <CartWidget/>
@@ -18,7 +19,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavBar() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar>
       <Container>
         <Navbar.Brand href="#home">CarArt</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -33,6 +34,9 @@ function NavBar() {
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Ofertas</NavDropdown.Item>
               <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Nuevos
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

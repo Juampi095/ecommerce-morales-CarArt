@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { useState } from 'react';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 
@@ -11,7 +10,7 @@ function App() {
       <NavBar/>
         {/* Acá va mi ItemListContainer.js */}
       <ItemListContainer greeting="Saludos a todos!"/>
-      </header>
+      </header>     
     </div>
   );
 }

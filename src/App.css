@@ -1,5 +1,6 @@
 .App {
   text-align: left;
+ 
 }
 
 .App-logo {
@@ -23,6 +24,7 @@
   color: #283fa5;
   margin: 5px;
   padding: 5px;
+
 }
 
 .App-link {
@@ -36,4 +38,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+.container{
+  background-color: #307cd4;
+  color: white;
+  font-family: 'Urbanist', sans-serif;
+}
+.navbar-brand{
+  color: white !important;
+}
+.nav-link{
+  color: white !important;
+}
+.dropdown-item{
+  color: #283fa5 !important;
 }
