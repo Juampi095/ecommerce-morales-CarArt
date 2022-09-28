@@ -1,6 +1,6 @@
 function ItemListContainer({greeting}){
     return(
-        <h1>{greeting}</h1>
+        <h3>{greeting}</h3>
     )
 }
 export default ItemListContainer;

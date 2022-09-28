@@ -7,13 +7,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <NavBar/>
-        {/* Acá va mi ItemListContainer.js */}
-      <ItemListContainer greeting="Saludos a todos!"/>
-      </header>     
+        <NavBar />
+      </header>
+      <ItemListContainer greeting="¡Bienvenidos a CarArt!" />
     </div>
   );
 }
 
 export default NavBar;
+
 

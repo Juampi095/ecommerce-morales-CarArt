@@ -35,7 +35,7 @@ function NavBar() {
               <NavDropdown.Item href="#action/3.3">Ofertas</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Nuevos
+                ¡Últimos lanzamientos!
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
