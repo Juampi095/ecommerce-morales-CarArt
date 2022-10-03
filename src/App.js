@@ -6,7 +6,7 @@ import ItemListContainer from './components/ItemListContainer';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
         <NavBar />
       </header>
       <ItemListContainer greeting="¡Bienvenidos a CarArt!" />
